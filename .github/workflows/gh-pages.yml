@@ -14,13 +14,13 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@gh-pages
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
-        uses: patrickaxe/ACAYP22
+        uses: patrickaxe/ACAYP22@gh-pages
         with:
           hugo-version: '0.101.0'
 
@@ -28,7 +28,7 @@ jobs:
         run: hugo --minify
 
       - name: Deploy
-        uses: patrickaxe/ACAYP22
+        uses: patrickaxe/ACAYP22@gh-pages
         # If you're changing the branch from main,
         # also change the `main` in `refs/heads/main`
         # below accordingly.
