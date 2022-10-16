@@ -1,5 +1,5 @@
-baseURL      = "https://patrickaxe.github.io/ACAYP22"
-title        = "Gallery Deluxe"
+baseURL      = "https://patrickaxe.github.io/ACAYP22/"
+title        = "ACAYP22 Victoria Tour Gallery"
 disableKinds = ["section", "taxonomy", "term"]
 
 [params]
@@ -15,7 +15,7 @@ disableKinds = ["section", "taxonomy", "term"]
 
         # Enable Exif data in the gallery.
         # See https://gohugo.io/content-management/image-processing/#exif-data for how to filter tags.
-        enable_exif = false
+        enable_exif = true
 
 [caches]
     [caches.images]
